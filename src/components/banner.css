@@ -1,0 +1,51 @@
+.banner-div {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.5;
+    padding-left: 5rem;
+    padding-top: 6rem;
+    padding-right: 5rem;
+    padding-bottom: 6rem;
+}
+
+.banner-title {
+    display: block;
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline: 0;
+    margin-inline-end: 0;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.banner-description {
+    font-weight: normal;
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.banner-url {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border:none;
+    border:solid 1px rgb(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 0.75rem;
+    background: rgb(255, 255, 255, 0.1);
+    transition: background 0.2s, border 0.2s;
+}
+
+.banner-url:hover {
+    border:solid 2px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
