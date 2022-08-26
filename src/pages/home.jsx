@@ -8,23 +8,18 @@ class Home extends React.Component {
                 <div className='home-banner'>
                     <h1 className='home-title'>Jared Hayashi</h1>
                     <h2 className='home-description'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Currently a senior at Iowa State University graduating in the Fall of 2022
                     </h2>
                 </div>
 
-                <hr width="75%"></hr>
+                <hr width="75%" />
 
                 <div className='projects'>
                     <h3>Projects:</h3>
 
                     {renderProjectContent(
                         'Gnutella Network',
-                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Morbi non arcu risus quis varius. Tempor orci dapibus ultrices in iaculis nunc sed.
-                        Malesuada proin libero nunc consequat interdum varius sit.`,
+                        `A proof of concept file sharing network based on the Gnutella protocol.`,
                         '/gnutella'
                     )}
 
@@ -74,6 +69,7 @@ function renderProjectContent(title, description, link) {
         <>
             <a className='project-title' href={link}>{title}</a>
             <h4 className='project-description'>{description}</h4>
+            <hr width="75%" />
         </>
     );
 }
