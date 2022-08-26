@@ -25,10 +25,9 @@ class Home extends React.Component {
 
                     {renderProjectContent(
                         'Epic 7 Auto Shop',
-                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Morbi non arcu risus quis varius. Tempor orci dapibus ultrices in iaculis nunc sed.
-                        Malesuada proin libero nunc consequat interdum varius sit.`,
+                        `A that uses image recognition to automate buying items from a shop in a game called Epic Seven.
+                        
+                        `,
                         '/e7-auto-shop'
                     )}
 
