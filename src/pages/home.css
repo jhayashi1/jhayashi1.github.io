@@ -21,18 +21,55 @@ h3 {
     margin-inline: 0;
     margin-inline-end: 0;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .home-description {
     font-size: 1.5rem;
     margin-inline: 7.5rem;
+    margin-top: 0;
+}
+
+.about {
+    font-size: 2.5rem;
+    margin-inline: 15rem;
+    margin-top: 0;
+}
+
+.text-div {
+    flex: 1;
+    display: inline;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-title {
+    display: flex;
+    flex: 1;
+    margin-bottom: 3rem;
+    margin-block: 1rem;
+}
+
+.about-description-div {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.about-description {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-inline: 1rem;
+    margin-block: 1rem;
 }
 
 .projects {
     font-size: 2.5rem;
     padding-top: 0;
-    margin-inline: 7.5rem;
+    margin-inline: 15rem;
 }
 .project-title {
     color: #ffffff;
@@ -54,4 +91,5 @@ h3 {
     margin-inline: 11rem;
     border-bottom-width: 10rem;
     border-bottom-color: #ffffff;
+    font-weight: normal;
 }
