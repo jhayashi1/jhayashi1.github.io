@@ -33,7 +33,7 @@ h3 {
 .about {
     font-size: 2.5rem;
     margin-inline: 15rem;
-    margin-top: 0;
+    margin-block: 2rem;
 }
 
 .text-div {
@@ -46,11 +46,25 @@ h3 {
     flex-direction: row;
 }
 
+.about-title-picture-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
 .about-title {
     display: flex;
     flex: 1;
     margin-bottom: 3rem;
     margin-block: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 .about-description-div {
@@ -71,13 +85,27 @@ h3 {
     padding-top: 0;
     margin-inline: 15rem;
 }
+
+.project-stuff {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 3rem;
+}
+
 .project-title {
+    flex: 1;
     color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.5rem;
-    margin-inline: 10rem;
+    margin-inline: 3rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -87,9 +115,18 @@ h3 {
 }
 
 .project-description {
+    flex: 3;
     font-size: 1.25rem;
-    margin-inline: 11rem;
+    margin-inline: 5rem;
     border-bottom-width: 10rem;
     border-bottom-color: #ffffff;
     font-weight: normal;
+}
+
+.project-image {
+    flex: 1;
+    margin-right: 5rem;
+    max-width: 15%;
+    border-radius: 1rem;
+    border: 2px solid red;
 }
