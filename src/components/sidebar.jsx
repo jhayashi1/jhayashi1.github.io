@@ -10,7 +10,6 @@ const Sidebar = () => {
       {renderSidebarItem('E7 Auto Shop', '/e7-auto-shop')}
       {renderSidebarItem('Discord Bot', '/berry-bot')}
       {renderSidebarItem('Website', '/website')}
-      {renderSidebarItem('Azul AI', '/azulAI')}
     </Menu>
   );
 };

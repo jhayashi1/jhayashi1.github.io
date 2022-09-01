@@ -2,6 +2,9 @@ import React from 'react';
 import './home.css';
 import selfie from '../assets/about-picture.jpg'
 import gnutella from '../assets/gnutella-image.png'
+import autoshop from '../assets/autoshop-image.png'
+import berrybot from '../assets/berrybot-image.png'
+import website from '../assets/website-image.png'
 
 class Home extends React.Component {
     render() {
@@ -48,9 +51,8 @@ class Home extends React.Component {
 
                     {renderProjectContent(
                         'Gnutella Network',
-                        `A proof of concept file sharing network based on the Gnutella protocol.
-                        
-                        Learn more here https://en.wikipedia.org/wiki/Gnutella
+                        `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
+                        and TCP for file sharing.
                         `,
                         gnutella,
                         '/gnutella'
@@ -58,41 +60,26 @@ class Home extends React.Component {
 
                     {renderProjectContent(
                         'Epic Seven Auto Shop',
-                        `A tool that uses image recognition to automate buying items from a shop in a game called Epic Seven.
-                        
+                        `A tool that uses opencv2 image recognition to automate buying items from a shop in a game called Epic Seven.
                         `,
-                        gnutella,
+                        autoshop,
                         '/e7-auto-shop'
                     )}
 
                     {renderProjectContent(
                         'Discord Bot',
-                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Morbi non arcu risus quis varius. Tempor orci dapibus ultrices in iaculis nunc sed.
-                        Malesuada proin libero nunc consequat interdum varius sit.`,
-                        gnutella,
+                        `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
+                        user tracking, reddit post fetching, etc.
+                        `,
+                        berrybot,
                         '/berry-bot'
                     )}
 
                     {renderProjectContent(
                         'Website',
-                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Morbi non arcu risus quis varius. Tempor orci dapibus ultrices in iaculis nunc sed.
-                        Malesuada proin libero nunc consequat interdum varius sit.`,
-                        gnutella,
+                        `A basic portfolio website built from scratch using React js and a few other npm packages.`,
+                        website,
                         '/website'
-                    )}
-
-                    {renderProjectContent(
-                        'Azul AI',
-                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Morbi non arcu risus quis varius. Tempor orci dapibus ultrices in iaculis nunc sed.
-                        Malesuada proin libero nunc consequat interdum varius sit.`,
-                        gnutella,
-                        '/azulAI'
                     )}
                 </div>
             </div>
@@ -108,7 +95,7 @@ function renderProjectContent(title, description, image, link) {
                     <a className='project-title' href={link}>{title}</a>
                     <h4 className='project-description'>{description}</h4>
                 </div>
-                <img className='project-image' src={image} alt={'yuh'} />
+                <a className='project-link' href={link}><img className='project-image' src={image} alt={'yuh'} /></a>
             </div>
             <hr width="90%" />
         </>

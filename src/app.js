@@ -37,7 +37,7 @@ class App extends React.Component {
                                 description='A general use discord bot'
                                 url='https://github.com/jhayashi1/BerryBot'
                                 readmeURL='https://raw.githubusercontent.com/jhayashi1/BerryBot/master/README.md'
-                                color1='#ff6918'
+                                color1='#e36019'
                                 color2='#edff49'
                             />} />
 
@@ -45,18 +45,9 @@ class App extends React.Component {
                                 title='Website'
                                 description='A website built using React js'
                                 url='https://github.com/jhayashi1/react-gh-website'
-                                readmeURL='https://raw.githubusercontent.com/jhayashi1/BerryBot/master/README.md'
+                                readmeURL='https://raw.githubusercontent.com/jhayashi1/react-gh-website/master/README.md'
                                 color1='#18d1ff'
                                 color2='#bc49ff'
-                            />} />
-
-                            <Route exact path='/azulAI' element={<Project
-                                title='Azul AI'
-                                description='An AI that plays the board game AZUL using NEAT'
-                                url='TODO'
-                                readmeURL='https://raw.githubusercontent.com/jhayashi1/BerryBot/master/README.md'
-                                color1='#f0e554'
-                                color2='#25e05d'
                             />} />
                         </Routes>
                     </div>

@@ -123,10 +123,14 @@ h3 {
     font-weight: normal;
 }
 
+.project-link {
+    flex: 1;
+    max-width: 15%;
+    margin-right: 4rem;
+}
+
 .project-image {
     flex: 1;
-    margin-right: 5rem;
-    max-width: 15%;
+    max-width: 100%;
     border-radius: 1rem;
-    border: 2px solid red;
 }
