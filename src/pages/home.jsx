@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import Accordion from '../components/accordion'
 import selfie from '../assets/about-picture.jpg'
 import gnutella from '../assets/gnutella-image.png'
 import autoshop from '../assets/autoshop-image.png'
@@ -8,81 +9,97 @@ import website from '../assets/website-image.png'
 
 class Home extends React.Component {
     render() {
-        return(
-            <div className='home'>
-                <div className='home-banner'>
-                    <h1 className='home-title'>Jared Hayashi</h1>
-                    <h2 className='home-description'>
-                        Software Engineering Student @ Iowa State University
-                    </h2>
+        return (
+          <div className="home">
+            <div className="home-banner">
+              <h1 className="home-title">Jared Hayashi</h1>
+              <h2 className="home-description">
+                Software Engineering Student @ Iowa State University
+              </h2>
+            </div>
+
+            <hr width="75%" />
+
+            <div className="about">
+              <div className="about-text">
+                <div className="about-title-picture-div">
+                  <h3 className="about-title">About:</h3>
+                  <img
+                    className="about-image"
+                    src={selfie}
+                    alt="Jared Hayashi"
+                  />
                 </div>
+                <div className="about-description-div">
+                  <h4 className="about-description">
+                    Hi my name is Jared, and I am currently a senior at Iowa
+                    State University. I will be graduating in Fall of 2022 with
+                    a bachelor's degree in Software Engineering.
+                  </h4>
+                  <h4 className="about-description">
+                    My passion for technology started when I was young and loved
+                    to play video games. I have always had the desire to
+                    understand how the things around me work. Eventually, that
+                    curiosity lead me to learn how to create mods for the games
+                    that I played which transitioned into my choice to pursue
+                    Software Engineering.
+                  </h4>
 
-                <hr width="75%" />
-
-                <div className='about'>
-                    <div className='about-text'>
-                        <div className='about-title-picture-div'>
-                            <h3 className='about-title'>About:</h3>
-                            <img className='about-image' src={selfie} alt='Jared Hayashi'/>
-                        </div>
-                        <div className='about-description-div'>
-                            <h4 className='about-description'>
-                                Hi my name is Jared, and I am currently a senior at Iowa State University. I will be graduating in Fall of 2022
-                                with a bachelor's degree in Software Engineering.
-                            </h4>
-                            <h4 className='about-description'>
-                                My passion for technology started when I was young and loved to play video games. I have always had the desire
-                                to understand how the things around me work. Eventually, that curiosity lead me to learn how to create mods for
-                                the games that I played which transitioned into my choice to pursue Software Engineering.
-                            </h4>
-
-                            <h4 className='about-description'>
-                                My areas of interest include Software Engineering, Cybersecurity, and Networking. I am currently looking for
-                                a place that will allow me leverage my knowledge and experience to overcome challenges within these fields.
-                            </h4>
-                        </div>
-                    </div>
+                  <h4 className="about-description">
+                    My areas of interest include Software Engineering,
+                    Cybersecurity, and Networking. I am currently looking for a
+                    place that will allow me leverage my knowledge and
+                    experience to overcome challenges within these fields.
+                  </h4>
                 </div>
+              </div>
+            </div>
 
-                <hr width="75%" />
+            <hr width="75%" />
 
-                <div className='projects'>
-                    <h3 style={{marginBlock: '2rem'}}>Projects:</h3>
+            <div className="projects">
+              <h3 style={{ marginBlock: "2rem" }}>Projects:</h3>
 
-                    {renderProjectContent(
-                        'Gnutella Network',
-                        `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
+              {renderProjectContent(
+                "Gnutella Network",
+                `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
                         and TCP for file sharing.
                         `,
-                        gnutella,
-                        '/gnutella'
-                    )}
+                gnutella,
+                "/gnutella"
+              )}
 
-                    {renderProjectContent(
-                        'Epic Seven Auto Shop',
-                        `A tool that uses opencv2 image recognition to automate buying items from a shop in a game called Epic Seven.
+              {renderProjectContent(
+                "Epic Seven Auto Shop",
+                `A tool that uses opencv2 image recognition to automate buying items from a shop in a game called Epic Seven.
                         `,
-                        autoshop,
-                        '/e7-auto-shop'
-                    )}
+                autoshop,
+                "/e7-auto-shop"
+              )}
 
-                    {renderProjectContent(
-                        'Discord Bot',
-                        `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
+              {renderProjectContent(
+                "Discord Bot",
+                `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
                         user tracking, reddit post fetching, etc.
                         `,
-                        berrybot,
-                        '/berry-bot'
-                    )}
+                berrybot,
+                "/berry-bot"
+              )}
 
-                    {renderProjectContent(
-                        'Website',
-                        `A basic portfolio website built from scratch using React js and a few other npm packages.`,
-                        website,
-                        '/website'
-                    )}
-                </div>
+              {renderProjectContent(
+                "Website",
+                `A basic portfolio website built from scratch using React js and a few other npm packages.`,
+                website,
+                "/website"
+              )}
             </div>
+
+            <div className="relavent-courses">
+              {accordionData.map(({title, content}) => (
+                <Accordion title={title} content={content} />
+              ))}
+            </div>
+          </div>
         );
     }
 }
@@ -101,5 +118,72 @@ function renderProjectContent(title, description, image, link) {
         </>
     );
 }
+
+const accordionData = [
+  {
+      title: 'COM S 309 - Software Development Practices',
+      content: ``	
+  },
+  {
+      title: 'COM S 311 - Algorithm Design and Analysis',
+      content: ``
+  },
+  {
+      title: 'COM S 321 - Computer Architecture and Machine-Level Programming',
+      content: ``
+  },
+  {
+      title: 'COM S 327 - Advanced Programming Techniques',
+      content: ``
+  },
+  {
+      title: 'COM S 352 - Introduction to Operating Systems',
+      content: ``	
+  },
+  {
+      title: 'COM S 363 - Introduction to Database Management Systems',
+      content: ``
+  },
+  {
+      title: 'COM S 472 - Principles of Artificial Intelligence',
+      content: ``	
+  },
+  {
+      title: 'COM S 487 - Network Programming, Applications, and Research Issues',
+      content: ``
+  },
+  {
+      title: 'S E 317 - Introduction to Software Testing',
+      content: ``
+  },
+  {
+      title: 'S E 319 - Construction of User Interfaces',
+      content: ``
+  },
+  {
+      title: 'S E 329 - Software Project Management',
+      content: ``
+  },
+  {
+      title: 'S E 339 - Software Architecture and Design',
+      content: ``
+  },
+  {
+      title: 'S E 409 - Software Requirements Engineering',
+      content: ``
+  },
+  {
+      title: 'S E 421 - Sofware Analysis and Verification for Safety and Security',
+      content: ``
+  },
+  {
+      title: 'S E 491/492 - Senior Design Project',
+      content: `` 
+  },
+  {
+      title: 'CPR E 430 - Network Protocols and Security',
+      content: ``
+  },
+]
 
 export default Home;
