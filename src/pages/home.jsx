@@ -60,41 +60,16 @@ class Home extends React.Component {
             <div className="projects">
               <h3 style={{ marginBlock: "2rem" }}>Projects:</h3>
 
-              {renderProjectContent(
-                "Gnutella Network",
-                `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
-                        and TCP for file sharing.
-                        `,
-                gnutella,
-                "/gnutella"
-              )}
-
-              {renderProjectContent(
-                "Epic Seven Auto Shop",
-                `A tool that uses opencv2 image recognition to automate buying items from a shop in a game called Epic Seven.
-                        `,
-                autoshop,
-                "/e7-auto-shop"
-              )}
-
-              {renderProjectContent(
-                "Discord Bot",
-                `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
-                        user tracking, reddit post fetching, etc.
-                        `,
-                berrybot,
-                "/berry-bot"
-              )}
-
-              {renderProjectContent(
-                "Website",
-                `A basic portfolio website built from scratch using React js and a few other npm packages.`,
-                website,
-                "/website"
-              )}
+              {projectData.map(({title, description, image, link, divider}) => (
+                renderProjectContent(title, description, image, link, divider)
+              ))}
             </div>
 
+            <hr width="75%" />
+
             <div className="relavent-courses">
+              <h3 style={{ marginBlock: "2rem" }}>Relavent Courses:</h3>
+
               {accordionData.map(({title, content}) => (
                 <Accordion title={title} content={content} />
               ))}
@@ -104,7 +79,7 @@ class Home extends React.Component {
     }
 }
 
-function renderProjectContent(title, description, image, link) {
+function renderProjectContent(title, description, image, link, divider) {
     return(
         <>
             <div className='project-stuff'>
@@ -114,15 +89,56 @@ function renderProjectContent(title, description, image, link) {
                 </div>
                 <a className='project-link' href={link}><img className='project-image' src={image} alt={'yuh'} /></a>
             </div>
-            <hr width="90%" />
+            {divider && <hr width="90%" />}
         </>
     );
 }
 
+const projectData = [
+  {
+    title: 'Gnutella Network',
+    description: `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
+    and TCP for file sharing.`,
+    image: gnutella,
+    link: '/gnutella',
+    divider: true
+  },  
+  {
+    title: 'Epic Seven Auto Shop',
+    description: `A tool that uses opencv2 image recognition to automate buying items from a shop in a game
+    called Epic Seven.`,
+    image: autoshop,
+    link: '/e7-auto-shop',
+    divider: true
+  },
+  {
+    title: 'Discord Bot',
+    description: `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
+    user tracking, reddit post fetching, etc.`,
+    image: berrybot,
+    link: '/berry-bot',
+    divider: true
+  },
+  {
+    title: 'Website',
+    description: `A basic portfolio website built from scratch using React js and a few other npm packages.`,
+    image: website,
+    link: '/website',
+    divider: false
+  },
+
+]
+
 const accordionData = [
   {
       title: 'COM S 309 - Software Development Practices',
-      content: ``	
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`	
   },
   {
       title: 'COM S 311 - Algorithm Design and Analysis',

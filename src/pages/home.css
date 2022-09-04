@@ -7,6 +7,7 @@ h3 {
     padding-top: 6rem;
     padding-right: 5rem;
     padding-bottom: 6rem;
+    font-size: 2.5rem;
 }
 
 .home-banner {
@@ -136,9 +137,27 @@ h3 {
 }
 
 .relavent-courses {
+    margin-inline: 15rem;
+}
+
+.accordion-item {
+    margin-inline: 5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.25rem;
+    font-weight: 450;
 }
 
 .accordion-title {
-    
+    display: flex;   
+    border: 2px solid #262d38;
+    padding: 0.25rem;
+}
+
+.accordion-content {
+    background-color: #29313d60;
+    border: 2px solid #262d38;
+    border-top: 0px;
+    font-size: 1.25;
+    font-weight: normal;
+    padding: 0.5rem;
 }
