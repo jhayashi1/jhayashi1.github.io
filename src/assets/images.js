@@ -15,6 +15,7 @@ import mysql from './mysql-image.png'
 import mssql from './mssql-image.png'
 import xplusplus from './x++-image.png'
 import vba from './vba-image.png'
+import git from './git-image.png'
 
 let imgs;
 
@@ -36,5 +37,6 @@ export default imgs = {
     'mysql': mysql,
     'mssql': mssql,
     'xplusplus': xplusplus,
-    'vba': vba
+    'vba': vba,
+    'git': git
 };

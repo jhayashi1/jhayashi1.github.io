@@ -4,10 +4,12 @@
     margin-inline: 1rem;
     border-radius: 1rem;
     border: 2px solid #262d38;
+    transition: transform .2s;
 }
 
 .skill-item:hover {
     background-color: #262d38;
+    transform: scale(1.10);
 }
 
 .skill-image {

@@ -9,11 +9,13 @@
     display: flex;   
     border: 2px solid #262d38;
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    transition: transform .2s;
 }
 
 .accordion-title:hover {
     background-color: #3e4146;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .accordion-content {

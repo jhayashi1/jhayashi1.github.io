@@ -251,7 +251,10 @@ const skillData = [
     title: 'VBA',
     image: imgs.vba,
   },
-
+  {
+    title: 'git',
+    image: imgs.git
+  }
 ]
 
 export default Home;
