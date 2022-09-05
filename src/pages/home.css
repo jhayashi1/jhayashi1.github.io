@@ -1,5 +1,6 @@
 h3 {
     margin-bottom: 0.75rem;
+    margin-block: 2rem;
 }
 
 .home {
@@ -91,3 +92,12 @@ h3 {
     margin-inline: 15rem;
 }
 
+.skills {
+    margin-inline: 15rem;
+}
+
+.skill-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    grid-gap: 1rem;
+}

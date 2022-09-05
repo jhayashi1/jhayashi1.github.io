@@ -3,12 +3,9 @@ import './home.css';
 
 import Accordion from '../components/accordion'
 import ProjectSection from '../components/project-section';
+import Skill from '../components/skill';
 
-import selfie from '../assets/about-picture.jpg'
-import gnutella from '../assets/gnutella-image.png'
-import autoshop from '../assets/autoshop-image.png'
-import berrybot from '../assets/berrybot-image.png'
-import website from '../assets/website-image.png'
+import imgs from '../assets/images';
 
 class Home extends React.Component {
     render() {
@@ -29,7 +26,7 @@ class Home extends React.Component {
                   <h3 className="about-title">About:</h3>
                   <img
                     className="about-image"
-                    src={selfie}
+                    src={imgs.selfie}
                     alt="Jared Hayashi"
                   />
                 </div>
@@ -61,7 +58,7 @@ class Home extends React.Component {
             <hr width="75%" />
 
             <div className="projects">
-              <h3 style={{ marginBlock: "2rem" }}>Projects:</h3>
+              <h3>Projects:</h3>
 
               {projectData.map(({title, description, image, link, divider}) => (
                 <ProjectSection title={title} description={description} image={image} link={link} divider={divider} />
@@ -71,12 +68,23 @@ class Home extends React.Component {
             <hr width="75%" />
 
             <div className="relavent-courses">
-              <h3 style={{ marginBlock: "2rem" }}>Relavent Courses:</h3>
+              <h3>Relavent Courses:</h3>
 
               {accordionData.map(({title, content}) => (
                 <Accordion title={title} content={content} />
               ))}
             </div>
+
+            <div className="skills">
+                <h3>Skills:</h3>
+
+                <div className='skill-table'>
+                      {skillData.map(({title, image, index}) => (
+                          <Skill title={title} image={image} />
+                      ))}
+                </div>
+            </div>
+
           </div>
         );
     }
@@ -87,7 +95,7 @@ const projectData = [
     title: 'Gnutella Network',
     description: `A proof of concept file sharing network based on the Gnutella protocol. Implements UDP for connections
     and TCP for file sharing.`,
-    image: gnutella,
+    image: imgs.gnutella,
     link: '/gnutella',
     divider: true
   },  
@@ -95,7 +103,7 @@ const projectData = [
     title: 'Epic Seven Auto Shop',
     description: `A tool that uses opencv2 image recognition to automate buying items from a shop in a game
     called Epic Seven.`,
-    image: autoshop,
+    image: imgs.autoshop,
     link: '/e7-auto-shop',
     divider: true
   },
@@ -103,14 +111,14 @@ const projectData = [
     title: 'Discord Bot',
     description: `A discord bot with several functionalities for my personal discord server. Including message and voice chat logging,
     user tracking, reddit post fetching, etc.`,
-    image: berrybot,
+    image: imgs.berrybot,
     link: '/berry-bot',
     divider: true
   },
   {
     title: 'Website',
     description: `A basic portfolio website built from scratch using React js and a few other npm packages.`,
-    image: website,
+    image: imgs.website,
     link: '/website',
     divider: false
   },
@@ -188,6 +196,62 @@ const accordionData = [
       title: 'CPR E 430 - Network Protocols and Security',
       content: ``
   },
+]
+
+const skillData = [
+  {
+    title: 'Java',
+    image: imgs.java,
+  },
+  {
+    title: 'C',
+    image: imgs.c,
+  },
+  {
+    title: 'C++',
+    image: imgs.cplusplus,
+  },
+  {
+    title: 'Python',
+    image: imgs.python,
+  },
+  {
+    title: 'Javascript',
+    image: imgs.javascript,
+  },
+  {
+    title: 'React js',
+    image: imgs.website,
+  },
+  {
+    title: 'Node js',
+    image: imgs.node,
+  },
+  {
+    title: 'HTML',
+    image: imgs.html,
+  },
+  {
+    title: 'CSS',
+    image: imgs.css,
+  },
+  {
+    title: 'MYSQL',
+    image: imgs.mysql,
+  },
+  {
+    title: 'MSSQL',
+    image: imgs.mssql,
+  },
+  {
+    title: 'X++',
+    image: imgs.xplusplus,
+  },
+  {
+    title: 'VBA',
+    image: imgs.vba,
+  },
+
 ]
 
 export default Home;
