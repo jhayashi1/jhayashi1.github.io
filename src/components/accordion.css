@@ -7,20 +7,21 @@
 
 .accordion-title {
     display: flex;   
-    border: 2px solid #262d38;
+    border: 1px solid #262d38;
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    transition: transform .2s;
+    transition: transform .2s, border .2s;
 }
 
 .accordion-title:hover {
     background-color: #3e4146;
     cursor: pointer;
     transform: scale(1.05);
+    border: 2px solid #262d38;
 }
 
 .accordion-content {
     background-color: #262d3867;
-    border: 2px solid #262d38;
+    border: 1px solid #262d38;
     border-top: 0px;
     font-size: 1.25rem;
     font-weight: normal;
