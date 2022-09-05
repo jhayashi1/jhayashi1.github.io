@@ -1,6 +1,9 @@
 import React from 'react';
 import './home.css';
+
 import Accordion from '../components/accordion'
+import ProjectSection from '../components/project-section';
+
 import selfie from '../assets/about-picture.jpg'
 import gnutella from '../assets/gnutella-image.png'
 import autoshop from '../assets/autoshop-image.png'
@@ -61,7 +64,7 @@ class Home extends React.Component {
               <h3 style={{ marginBlock: "2rem" }}>Projects:</h3>
 
               {projectData.map(({title, description, image, link, divider}) => (
-                renderProjectContent(title, description, image, link, divider)
+                <ProjectSection title={title} description={description} image={image} link={link} divider={divider} />
               ))}
             </div>
 
@@ -77,21 +80,6 @@ class Home extends React.Component {
           </div>
         );
     }
-}
-
-function renderProjectContent(title, description, image, link, divider) {
-    return(
-        <>
-            <div className='project-stuff'>
-                <div className='project-text'>
-                    <a className='project-title' href={link}>{title}</a>
-                    <h4 className='project-description'>{description}</h4>
-                </div>
-                <a className='project-link' href={link}><img className='project-image' src={image} alt={'yuh'} /></a>
-            </div>
-            {divider && <hr width="90%" />}
-        </>
-    );
 }
 
 const projectData = [

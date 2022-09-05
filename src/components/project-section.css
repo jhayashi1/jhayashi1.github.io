@@ -1,0 +1,48 @@
+.project-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 3rem;
+}
+
+.project-title {
+    flex: 1;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin-inline: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-title:hover {
+    color: #d1d1d1;
+}
+
+.project-description {
+    flex: 3;
+    font-size: 1.25rem;
+    margin-inline: 5rem;
+    border-bottom-width: 10rem;
+    border-bottom-color: #ffffff;
+    font-weight: normal;
+}
+
+.project-link {
+    flex: 1;
+    max-width: 15%;
+    margin-right: 4rem;
+}
+
+.project-image {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 1rem;
+}
