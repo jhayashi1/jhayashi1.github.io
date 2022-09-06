@@ -18,7 +18,7 @@ class Home extends React.Component {
               </h2>
             </div>
 
-            <hr width="75%" />
+            <hr/>
 
             <div className="about">
               <div className="about-text">
@@ -55,7 +55,7 @@ class Home extends React.Component {
               </div>
             </div>
 
-            <hr width="75%" />
+            <hr/>
 
             <div className="projects">
               <h3>Projects:</h3>
@@ -65,7 +65,7 @@ class Home extends React.Component {
               ))}
             </div>
 
-            <hr width="75%" />
+            <hr/>
 
             <div className="relavent-courses">
               <h3>Relavent Courses:</h3>
@@ -75,11 +75,13 @@ class Home extends React.Component {
               ))}
             </div>
 
+            <hr/>
+
             <div className="skills">
                 <h3>Skills:</h3>
 
                 <div className='skill-table'>
-                      {skillData.map(({title, image, index}) => (
+                      {skillData.map(({title, image}) => (
                           <Skill title={title} image={image} />
                       ))}
                 </div>

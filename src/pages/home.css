@@ -4,10 +4,10 @@ h3 {
 }
 
 .home {
-    padding-left: 5rem;
-    padding-top: 6rem;
-    padding-right: 5rem;
-    padding-bottom: 6rem;
+    padding-left: 17.5rem;
+    padding-top: 3rem;
+    padding-right: 17.5rem;
+    padding-bottom: 3rem;
     font-size: 2.5rem;
 }
 
@@ -34,7 +34,7 @@ h3 {
 
 .about {
     font-size: 2.5rem;
-    margin-inline: 15rem;
+    margin-inline: 3rem;
     margin-block: 2rem;
 }
 
@@ -58,14 +58,15 @@ h3 {
 .about-title {
     display: flex;
     flex: 1;
-    margin-bottom: 3rem;
-    margin-block: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .about-image {
     flex: 1;
     max-width: 100%;
-    border-radius: 1rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
     object-fit: cover;
 }
 
@@ -85,19 +86,20 @@ h3 {
 .projects {
     font-size: 2.5rem;
     padding-top: 0;
-    margin-inline: 15rem;
+    margin-inline: 3rem;
 }
 
 .relavent-courses {
-    margin-inline: 15rem;
+    margin-inline: 3rem;
 }
 
 .skills {
-    margin-inline: 15rem;
+    margin-inline: 3rem;
 }
 
 .skill-table {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    margin-inline: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     grid-gap: 1rem;
 }

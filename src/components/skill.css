@@ -1,7 +1,7 @@
 .skill-item {
     display: flex;
     flex-direction: column;
-    margin-inline: 1rem;
+    margin-inline: 0rem;
     border-radius: 1rem;
     border: 2px solid #262d38;
     transition: transform .2s;
