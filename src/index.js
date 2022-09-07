@@ -13,7 +13,9 @@ document.body.style.color = '#ffffff';
 document.body.style.fontFamily = 'system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif';
 
 root.render(
-    <BrowserRouter>
-        <App /> 
-    </BrowserRouter>
+    <React.StrictMode>
+        <BrowserRouter>
+            <App /> 
+        </BrowserRouter>
+    </React.StrictMode>
 );
