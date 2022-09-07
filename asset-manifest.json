@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.038b0132.css",
+    "main.js": "/static/js/main.395af374.js",
+    "static/media/about-image.jpg": "/static/media/about-image.0986f9bf43a13de2ad4a.jpg",
+    "static/media/java-image.png": "/static/media/java-image.7bf19c6642656620f1ca.png",
+    "static/media/autoshop-image.png": "/static/media/autoshop-image.41b8cc89e6ae5de36860.png",
+    "static/media/gnutella-image.png": "/static/media/gnutella-image.b1ec159ec14448489322.png",
+    "static/media/mssql-image.png": "/static/media/mssql-image.5e5a95d0132fb6bec789.png",
+    "static/media/vba-image.png": "/static/media/vba-image.6a2f5d4630e5b69adeda.png",
+    "static/media/node-image.png": "/static/media/node-image.03c778aba95375d5eaa3.png",
+    "static/media/python-image.png": "/static/media/python-image.e4d0b2b59a165ddcb91e.png",
+    "static/media/git-image.png": "/static/media/git-image.ff0a6bb7a32abe3ca278.png",
+    "static/media/x++-image.png": "/static/media/x++-image.4bb9a3bc245cdc0e4717.png",
+    "static/media/css-image.png": "/static/media/css-image.c4f5c386f44129c000b2.png",
+    "static/media/berrybot-image.png": "/static/media/berrybot-image.181933c8579bb95bb868.png",
+    "static/media/html-image.png": "/static/media/html-image.cd7fe9693ba07f20a273.png",
+    "static/media/c++-image.png": "/static/media/c++-image.fff98df264a149a6640c.png",
+    "static/media/javascript-image.png": "/static/media/javascript-image.abdf146fd1b888cc706f.png",
+    "static/media/mysql-image.png": "/static/media/mysql-image.a6cb9181ba593b446d27.png",
+    "static/media/website-image.png": "/static/media/website-image.eaf3b94e99e5b0b717ce.png",
+    "index.html": "/index.html",
+    "main.038b0132.css.map": "/static/css/main.038b0132.css.map",
+    "main.395af374.js.map": "/static/js/main.395af374.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.038b0132.css",
+    "static/js/main.395af374.js"
+  ]
+}
