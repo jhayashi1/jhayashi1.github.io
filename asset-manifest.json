@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.038b0132.css",
-    "main.js": "/static/js/main.b895bcf3.js",
+    "main.js": "/static/js/main.1784b02d.js",
     "static/media/about-image.jpg": "/static/media/about-image.0986f9bf43a13de2ad4a.jpg",
     "static/media/java-image.png": "/static/media/java-image.7bf19c6642656620f1ca.png",
     "static/media/autoshop-image.png": "/static/media/autoshop-image.41b8cc89e6ae5de36860.png",
@@ -21,10 +21,10 @@
     "static/media/website-image.png": "/static/media/website-image.eaf3b94e99e5b0b717ce.png",
     "index.html": "/index.html",
     "main.038b0132.css.map": "/static/css/main.038b0132.css.map",
-    "main.b895bcf3.js.map": "/static/js/main.b895bcf3.js.map"
+    "main.1784b02d.js.map": "/static/js/main.1784b02d.js.map"
   },
   "entrypoints": [
     "static/css/main.038b0132.css",
-    "static/js/main.b895bcf3.js"
+    "static/js/main.1784b02d.js"
   ]
 }
