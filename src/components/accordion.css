@@ -1,5 +1,5 @@
 .accordion-item {
-    margin-inline: 5rem;
+    margin-inline: 7rem;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
     font-weight: 450;
@@ -15,7 +15,7 @@
 .accordion-title:hover {
     background-color: #3e4146;
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.02);
     border: 2px solid #262d38;
 }
 

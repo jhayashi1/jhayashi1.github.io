@@ -18,73 +18,87 @@ const Accordion = ({ title, content }) => {
 const accordionData = [
     {
         title: 'COM S 309 - Software Development Practices',
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.`	
+        content: `Semester-long programming project with focus on management,
+        testing, and maintenance. Developed using Android Studio, Springboot, and MYSQL, and
+        tested with various tools such as JUnit, Espresso, CI/CD, etc.`
     },
     {
         title: 'COM S 311 - Algorithm Design and Analysis',
-        content: ``
+        content: `Evaluation of algorithm design techniques such as dynamic programming, 
+        divide and conquer, greedy methods as well as analysis of runtimes using Big O,
+        Big Theta, and Big Omega notation.`
     },
     {
         title: 'COM S 321 - Computer Architecture and Machine-Level Programming',
-        content: ``
+        content: `Evaluation of machine hardware such as CPU's, RAM, hard drives
+        and their performance. As well as programming machine code using Assembly`
     },
     {
         title: 'COM S 327 - Advanced Programming Techniques',
-        content: ``
+        content: `Project-oriented class involving programming in C and C++ with an emphasis
+        on linux concepts, memory management, testing, compiling, etc.`
     },
     {
         title: 'COM S 352 - Introduction to Operating Systems',
-        content: ``	
+        content: `Evaluation of general concepts involving operating systems with some
+        programming involved. Topics included processes, queues, multithreading, synchronization, 
+        file systems (local and distributed), networking, cybersecurity, encryption, etc.`	
     },
     {
         title: 'COM S 363 - Introduction to Database Management Systems',
-        content: ``
+        content: `Analysis of database concepts involving entity-relationship models, relational databases 
+        (DDL and SQL), indexes, queries, synchronization, runtime analysis, and programming projects
+        using MYSQL and Neo4j.`
     },
     {
         title: 'COM S 472 - Principles of Artificial Intelligence',
-        content: ``	
+        content: `Techniques, implementations, and applications of rational agents. 
+        Currently in progress.`	
     },
     {
         title: 'COM S 487 - Network Programming, Applications, and Research Issues',
-        content: ``
+        content: `Principles of network programming including client-server and P2P networks,
+        sockets, multicasting, scheduling, etc. as well as their benefits and downsides. Programming
+        projects involving building networks with sockets and threads.`
     },
     {
         title: 'S E 317 - Introduction to Software Testing',
-        content: ``
+        content: `Currently in progress.`
     },
     {
         title: 'S E 319 - Construction of User Interfaces',
-        content: ``
+        content: `Designed user interfaces using HTML and Javascript and analyzed them using UML
+        diagrams. Group project at the end of the semester created using HTML and Node js that was
+        deployed to a server for tesing.`
     },
     {
         title: 'S E 329 - Software Project Management',
-        content: ``
+        content: `Studied project management concepts such as planning, cost estimation, risk management, etc.
+        Created design documents revolving around a deliverable in the form of a website that was modeled
+        using HTML and Javascript`
     },
     {
         title: 'S E 339 - Software Architecture and Design',
-        content: ``
+        content: `Evaluated different software design patterns and analysis methods. Modeled software architecture
+        using context, use case, communication, and component diagrams. Small projects involving reverse engineering
+        and designing extensions for open source programs.`
     },
     {
         title: 'S E 409 - Software Requirements Engineering',
-        content: ``
+        content: `Currently in progress.`
     },
     {
         title: 'S E 421 - Sofware Analysis and Verification for Safety and Security',
-        content: ``
+        content: `Studied cybersecurity concepts regarding detecting vulnerabilities within complex software.
+        Created control flow graphs and used Atlas software to visualize and assist in detecting vulnerabilities.`
     },
     {
         title: 'S E 491/492 - Senior Design Project',
-        content: `` 
+        content: `Currently in progress.` 
     },
     {
         title: 'CPR E 430 - Network Protocols and Security',
-        content: ``
+        content: `Current in progress`
     },
   ];
 
