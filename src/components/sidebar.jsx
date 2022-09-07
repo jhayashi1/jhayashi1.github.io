@@ -6,8 +6,8 @@ const Sidebar = () => {
   return (
     <Menu>
       {renderSidebarItem('Home', '/')}
-      {renderSidebarItem('Gnutella Network', '/gnutella')}
       {renderSidebarItem('E7 Auto Shop', '/e7-auto-shop')}
+      {renderSidebarItem('Gnutella Network', '/gnutella')}
       {renderSidebarItem('Discord Bot', '/berry-bot')}
       {renderSidebarItem('Website', '/website')}
     </Menu>

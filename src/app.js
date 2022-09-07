@@ -17,8 +17,8 @@ class App extends React.Component {
                             <Route exact path='/gnutella' element={<Project
                                 title='Gnutella Network'
                                 description='A proof of concept file sharing P2P network'
-                                url='TODO'
-                                readmeURL='https://raw.githubusercontent.com/jhayashi1/e7-automation-manager/master/README.md'
+                                url='https://github.com/jhayashi1/gnutella-concept'
+                                readmeURL='https://raw.githubusercontent.com/jhayashi1/gnutella-concept/master/README.md'
                                 color1='#ff1818'
                                 color2='#ff49e7'
                             />} />
