@@ -85,7 +85,9 @@ const accordionData = [
     },
     {
         title: 'S E 409 - Software Requirements Engineering',
-        content: `Currently in progress.`
+        content: `Analyzing the requirements process and review when developing software projects. Working with
+        Context Diagrams, Use Case Diagrams, Communication Diagrams, etc. to help identify functional and
+        non-functional requirements. Currently in progress.`
     },
     {
         title: 'S E 421 - Sofware Analysis and Verification for Safety and Security',
@@ -94,11 +96,14 @@ const accordionData = [
     },
     {
         title: 'S E 491/492 - Senior Design Project',
-        content: `Currently in progress.` 
+        content: `Two semester long project. First semester involved defining requirements, design, schedule,
+        etc. Second semester will involve the development of the application. Currently in progress.` 
     },
     {
         title: 'CPR E 430 - Network Protocols and Security',
-        content: `Current in progress`
+        content: `Analysis of network protocols and security issues. Studying different
+        networking standards such as OSI and TCP/IP model along with their advantages and disadvantages.
+        Currently in progress`
     },
   ];
 
